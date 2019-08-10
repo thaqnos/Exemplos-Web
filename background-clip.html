@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background-clip</title>
+    <style>
+    .fundo{
+        width: 300px;
+        height: 400px;
+        background-image: url("images/gatos.jpg");
+        background-size: cover;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        line-height: 62px;
+        font-weight: 900;
+        text-transform: uppercase;
+        /*As 3 propriedades abaixo devem ser usadas juntas
+          para dar o efeito em todos os navegadores (menos IE)*/
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+    </style>
+</head>
+<body>
+    <div class="fundo">
+        Este é um texto daorinha :)
+    </div>
+</body>
+</html>

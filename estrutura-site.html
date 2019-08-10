@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estrutura de um Site</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            box-sizing: border-box; 
+            /*aplicar no corpo de todo o site, pois seta contando com borda, padding e todas as configurações setadas*/
+        }
+
+        div, header, aside, nav, footer, section, article{
+            background-color: #DDD;
+            border: 1px solid #999; 
+            padding: 10px; 
+            text-align: center;
+        }
+        
+        .clear{
+            clear: both;
+            border: none;
+            padding: 0;
+        }
+
+        #conteiner{
+            margin-left: auto; /*setar margens automáticas para centralizar o conteúdo na pg*/
+            margin-right: auto;
+            width: 1000px;
+        }
+
+        #menu, #conteudo, #sidebar{
+            float: left;
+            width: 33.333%;
+        }
+
+        #topo{
+            margin-bottom: 10px;
+        }
+
+        #rodape{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <header id="topo">
+            Cabeçalho
+        </header>
+        <nav id="menu">
+            Menu
+        </nav>
+        <div id="conteudo">
+            Conteúdo
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo neque a repellendus deleniti voluptate ea fugiat consectetur eos. Ipsum provident totam accusantium aperiam cumque atque libero consequuntur quos iste? Perferendis.</p>
+            <p>Laborum unde distinctio maiores neque nulla explicabo magni possimus asperiores architecto repellat nam nobis beatae minus, modi a blanditiis incidunt nihil voluptate culpa laudantium. Vel doloremque velit perspiciatis illo soluta.</p>
+            <p>Itaque minima praesentium iure temporibus sapiente totam delectus quo laboriosam, ipsum, reprehenderit dicta beatae accusamus velit amet obcaecati, officia debitis culpa doloribus quos magni. Ipsam eum perspiciatis incidunt delectus consequatur?</p>
+        </div>
+        <aside id="sidebar">
+            Barra Lateral
+        </aside>
+        <div class="clear">
+            <p></p>
+        </div>
+        <footer id="rodape">
+            Rodapé
+        </footer>
+    </div>
+</body>
+</html>

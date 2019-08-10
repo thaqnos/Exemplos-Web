@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulários HTML5</title>
+</head>
+
+<body>
+
+    <form action="" method="GET"></form>
+    <fieldset>
+        <legend>Dados Pessoais:</legend>
+        <div>
+            <label>
+                Nome:<br>
+                <input type="text" id="nome" name="seuNome" placeholder="Insira seu nome"> <br>
+                <!--name - atributo enviado para o servidor-->
+            </label>
+        </div>
+        <div>
+            <label>
+                E-mail:<br>
+                <input type="email" id="email" name="seuEmail" placeholder="Insira seu e-mail">
+            </label>
+        </div>
+        <div>
+            <label>
+                Telefone:<br>
+                <input type="tel" id="telefone" name="seuTel" placeholder="Insira seu tel"
+                    pattern="\([0-9]{2}\) [0-9]{4}-[0-9]{4}$">
+            </label>
+        </div>
+        <div>
+            <label>
+                Data de aniversário:<br>
+                <input type="date" id="data" name="suaData" placeholder="Insira sua data">
+            </label>
+        </div>
+        <div>
+            <label>
+                Sua idade:<br>
+                <input type="number" id="idade" name="suaIdade" placeholder="Insira sua idade">
+            </label>
+        </div>
+        <div>
+            <label>
+                Sua cor:<br>
+                <input type="color" id="cor" name="suaCor" value="#ff0000">
+            </label>
+        </div>
+        <div>
+            <label>
+                Tamanho máximo:<br>
+                <input type="range" id="tamanho" name="seuTamanho" min="36" max="80" step="2" value="40">
+                <output for="tamanho">
+                    40
+                </output>
+            </label>
+        </div>
+        <div>
+            <label>
+                Forma de Pagamento: <br>
+                <select name="pagamento" id="pagamento">
+                    <option value="">Selecione</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="visa">Visa</option>
+                    <option value="boleto">Boleto</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label>Preferências</label><br>
+            <label>
+                <input type="checkbox" value="ficcao" name="preferencias">
+                Ficção
+            </label><br>
+            <label>
+                <input type="checkbox" value="romance" name="preferencias">
+                Romance
+            </label><br>
+            <label>
+                <input type="checkbox" value="aventura" name="preferencias">
+                Aventura
+            </label><br>
+        </div>
+
+    </fieldset>
+    <!--Agrupamento, cria uma linha em volta do formulario, por padrão-->
+    <div>
+        <button type="submit">
+            Enviar informações
+        </button>
+    </div>
+</body>
+
+</html>

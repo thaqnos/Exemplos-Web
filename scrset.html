@@ -1,0 +1,30 @@
+
+<!--Srcset: o browser busca a imagem com melhor qualidade e resolução,
+    se setadas de acordo com o código abaixo: 
+    PS.: Não esquecer a vírgula ao final do scrset-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>srcset</title>
+    <style>
+        img{
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://placehold.it/960x500" 
+         srcset="https://placehold.it/960x500 960w,
+                 https://placehold.it/600x400 600w,
+                 https://placehold.it/480x300 480w,
+                 https://placehold.it/360x200 360w" 
+         sizes="(max-width: 360px) 360px,
+                (max-width: 480px) 480px,
+                (max-width: 600px) 600px,
+                960px"/>
+</body>
+</html>
